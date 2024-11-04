@@ -1,56 +1,238 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
-    <link rel="stylesheet" href="./stylesheet/bootstrap-5.0.2-dist/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nexa+Book&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <title>Document</title>
+    <style>
+        /* Estilos básicos para el menú */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .menu {
+            width: 200px;
+            position: relative;
+            display: inline-block;
+            text-align: left;
+        }
+
+        .menu button {
+            background-color:rgba(148,207,201,1);
+            color: Black;
+            padding: 14px 20px;
+            font-size: 16px;
+            font-style:normal;
+            border: none;
+            cursor: pointer;
+            width: 80%;
+            text-align: left;
+        }
+
+        .menu button:hover {
+            background-color: rgb(77, 211, 197);
+        }
+
+        /* Estilo del contenido del menú desplegable */
+        .menu-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(26,49,64,100);
+            min-width: 250px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .menu-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .menu-content a:hover {
+            background-color: #575757;
+        }
+
+        /* Mostrar el contenido del menú al hacer clic */
+        .menu:hover .menu-content {
+            display: block;
+        }
+    </style>
 </head>
+
 <body>
-    
-    <nav class="navbar navbar-expand-lg navbar-light bg-ligth">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Menú colapsable -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- Menú y galeria a la izquierda -->
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="Galeria">
-                        <a class="nav-link" href="#">Galería</a>
-                    </li>
-                    <li class="">
-                        <a class="nav-link" href="#">Menú</a>
-                    </li>
-                </ul>
-                <!-- Marca centrada -->
-            <a class="navbar-brand logo" href="#">Tu Marca</a>
-                <!-- Contactos y reservas a la derecha -->
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="contactos">
-                        <a class="nav-link" href="#">Contactos</a>
-                    </li>
-                    <li class="reservas">
-                        <a class="nav-link" href="#">Reservas</a>
-                    </li>
-                </ul>
+    <div class="v9_1532">
+        <div class="v9_1533"></div>
+        <div class="v9_1538"><span class="v9_1539">PRODUCTOS</span><span class="v9_1546">Lacus lobortis nullam nam
+                consectetur fermentum mattis pellentesque id nulla. Risus convallis iaculis risus ac aliquam sit
+                ultricies. Adipiscing adipiscing pellentesque tincidunt vitae. Aliquam dolor egestas nam congue elit
+                dolor.</span>
+            <div class="name"></div>
+            <div class="name"></div>
+        </div>
+        <div class="name"></div>
+        <div class="name"></div>
+        <div class="v9_1552"></div>
+        <div class="v9_1553"></div><span class="v9_1573">BEBIDAS</span><span class="v157_354">CHEF MAURICIO</span>
+        <div class="v9_1575">
+            <div class="v9_1576"></div>
+            <div class="v9_1577"></div>
+        </div>
+        <div class="name"></div><span class="v9_1582">Mamani Tonic Gin, zumo de limón. wira wira y agua tónica</span>
+        <div class="name"></div>
+        <div class="v9_1643"></div>
+        <span class="v9_1644">
+            <div class="menu">
+                <button>CONTACTOS</button>
+                <div class="menu-content">
+                    <a href="#opcion1">Números de contacto directo:  Dueño +591 73286217 (Mauricio)  <br> Dueña +591 70132723 (Jessica)</a>
+                    <a href="https://www.google.com/maps/place/Av.+Tacagua,+La+Paz/@-16.509,-68.1442,17z/data=!4m6!3m5!1s0x915edf874b234971:0x2de545f31ffa7f4!8m2!3d-16.5091788!4d-68.1442524!16s%2Fg%2F1tdxgc7h?hl=es&entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D">Ubicación del restaurante</a>
+                </div>
+            </div>
+        </span>
+        <span class="v9_1645">
+            <div class="menu">
+                <button>MENÚ</button>
+                <div class="menu-content">
+                    <a href="./Menu/menu.html">Lista</a>
+                </div>
+            </div>
+        </span>
+        <span class="v9_1646">
+            <div class="menu">
+                <button>NOSOTROS</button>
+                <div class="menu-content">
+                    <a href="./Historia/hist.html">Datos instituiconales</a>
+                </div>
+            </div>
+        </span>
+        <span class="v9_1646_1">
+            <div class="menu">
+                <button>GALERÍA</button>
+                <div class="menu-content">
+                    <a href="#opcion1">Fotos</a>
+                    <a href="./VideosPromocionales/vidprom.html">Videos promocionales</a>
+                    <a href="./ArteCulinario/artculinario.html">Arte Culinario</a>
+                    <a href="./InvDesarrollo/invdes.html">Investigación y Desarrollo</a>
+                </div>
+            </div>
+        </span>
+        <div class="v9_1648"></div>
+        <div class="v9_1649">
+            <div class="v9_1650">
+                <div class="v9_1651">
+                    <div class="v9_1652"></div>
+                    <div class="v9_1653"></div>
+                    <div class="v9_1654"></div>
+                    <div class="v9_1655"></div>
+                    <div class="v9_1656"></div>
+                    <div class="v9_1657"></div>
+                    <div class="v9_1658"></div>
+                    <div class="v9_1659"></div>
+                    <div class="v9_1660"></div>
+                    <div class="v9_1661"></div>
+                </div>
+            </div>
+            <div class="v9_1662"></div>
+            <div class="v9_1663">
+                <div class="v9_1664"></div>
+                <div class="v9_1665"></div>
+                <div class="v9_1666"></div>
+                <div class="v9_1667"></div>
+                <div class="v9_1668"></div>
+                <div class="v9_1669"></div>
+                <div class="v9_1670"></div>
+                <div class="v9_1671"></div>
+                <div class="v9_1672"></div>
+                <div class="v9_1673"></div>
+                <div class="v9_1674"></div>
+                <div class="v9_1675"></div>
+                <div class="v9_1676"></div>
+                <div class="v9_1677"></div>
+                <div class="v9_1678"></div>
+                <div class="v9_1679"></div>
+                <div class="v9_1680"></div>
+                <div class="v9_1681"></div>
+                <div class="v9_1682"></div>
+                <div class="v9_1683"></div>
+                <div class="v9_1684"></div>
             </div>
         </div>
-    </nav>
-    <!-- Imagen principal de bienvenida -->
-    <div class="bienvenida">
-        <img src="" alt="" width="100%" >
-       <button class="btn-reservar">reservar</button>
+        <div class="v9_1688"></div>
+        <div class="name"></div>
+        <div class="v9_309"><span class="v9_310">Bienvenido al</span><span class="v9_311"> Restaurante</span><span
+                class="v9_312">COCINANDO CON IDENTIDAD</span>
+            <div class="v9_313"></div>
+            <div class="v9_314"></div>
+        </div>
+        <div class="v160_357"></div>
+        <div class="v145_121"></div>
+        <div class="v145_122"></div><span class="v145_123">Bajo Tacagua:</span><span class="v145_124">Av. Huáscar Nº
+            45</span>
+        <div class="v145_125"></div>
+        <div class="v145_126"></div><span class="v145_127">CONTACTO:</span>
+        <div class="v145_128"></div>
+        <div class="v145_129"></div>
+        <div class="v145_130"></div>
+        <div class="v145_131"></div>
+        <div class="v145_132"></div>
+        <div class="v145_133"></div>
+        <div class="v145_134"></div>
+        <div class="v145_135"></div>
+        <div class="v145_136">
+            <div class="v145_137">
+                <div class="v145_138">
+                    <div class="v145_139"></div>
+                    <div class="v145_140"></div>
+                    <div class="v145_141"></div>
+                    <div class="v145_142"></div>
+                    <div class="v145_143"></div>
+                    <div class="v145_144"></div>
+                    <div class="v145_145"></div>
+                    <div class="v145_146"></div>
+                    <div class="v145_147"></div>
+                    <div class="v145_148"></div>
+                </div>
+            </div>
+            <div class="v145_149"></div>
+            <div class="v145_150">
+                <div class="v145_151"></div>
+                <div class="v145_152"></div>
+                <div class="v145_153"></div>
+                <div class="v145_154"></div>
+                <div class="v145_155"></div>
+                <div class="v145_156"></div>
+                <div class="v145_157"></div>
+                <div class="v145_158"></div>
+                <div class="v145_159"></div>
+                <div class="v145_160"></div>
+                <div class="v145_161"></div>
+                <div class="v145_162"></div>
+                <div class="v145_163"></div>
+                <div class="v145_164"></div>
+                <div class="v145_165"></div>
+                <div class="v145_166"></div>
+                <div class="v145_167"></div>
+                <div class="v145_168"></div>
+                <div class="v145_169"></div>
+                <div class="v145_170"></div>
+                <div class="v145_171"></div>
+            </div>
+        </div><span class="v145_172">CONTACTOS</span><span class="v145_173">RESERVAS</span><span
+            class="v145_174">NOSOTROS</span><span class="v145_175">GALERIA</span><span
+            class="v145_176">UBICACION</span><span class="v145_177">76270243
+            73286217</span><span class="v200_246">En cada bebida que servimos en Tupac, llevamos la esencia de Bolivia:
+            sabores que nacen de nuestras tierras y que cuentan historias de tradición y autenticidad. Cada sorbo es un
+            tributo a la riqueza de nuestro país y a quienes ponen su corazón en cada ingrediente. ¡Brindemos por lo
+            nuestro!</span>
+        <div class="v206_688"></div>
     </div>
-    <h1>PRODUCTOS</h1>
-    <H4></H4>
-    
-
-   
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    
 </body>
-</html># -restaurante-tupac
-sitio web ecomerce para un restaurante 
+
+</html>
